@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TKDSecondViewController : UIViewController
+@interface TKDLayoutingViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomInset;
 
 @end

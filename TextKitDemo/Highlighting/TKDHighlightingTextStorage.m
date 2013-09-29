@@ -75,10 +75,6 @@
 		// Add red highlight color
 		[self addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:result.range];
 	}];
-	
-	
-	// Note that we did change text attributes
-	[self edited:NSTextStorageEditedAttributes range:paragaphRange changeInLength:0];
 }
 
 @end

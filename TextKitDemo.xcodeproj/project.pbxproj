@@ -14,7 +14,6 @@
 		5041483417F80E5C008D88C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041483317F80E5C008D88C6 /* main.m */; };
 		5041483817F80E5C008D88C6 /* TKDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041483717F80E5C008D88C6 /* TKDAppDelegate.m */; };
 		5041483B17F80E5C008D88C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5041483917F80E5C008D88C6 /* Main.storyboard */; };
-		5041484117F80E5C008D88C6 /* TKDSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041484017F80E5C008D88C6 /* TKDSecondViewController.m */; };
 		5041484317F80E5C008D88C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5041484217F80E5C008D88C6 /* Images.xcassets */; };
 		5041484A17F80E5C008D88C6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5041484917F80E5C008D88C6 /* XCTest.framework */; };
 		5041484B17F80E5C008D88C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5041482717F80E5C008D88C6 /* Foundation.framework */; };
@@ -26,6 +25,9 @@
 		5041486C17F81F2F008D88C6 /* TKDHighlightingTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041486B17F81F2F008D88C6 /* TKDHighlightingTextStorage.m */; };
 		5041486F17F821E5008D88C6 /* lorem.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5041486E17F821E5008D88C6 /* lorem.txt */; };
 		5041487117F82265008D88C6 /* iText.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5041487017F82265008D88C6 /* iText.txt */; };
+		5041487517F8418B008D88C6 /* TKDLayoutingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041487417F8418B008D88C6 /* TKDLayoutingViewController.m */; };
+		5041487717F843EA008D88C6 /* layout.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5041487617F843EA008D88C6 /* layout.txt */; };
+		5041487A17F844E5008D88C6 /* TKDLinkDetectingTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041487917F844E5008D88C6 /* TKDLinkDetectingTextStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +52,6 @@
 		5041483617F80E5C008D88C6 /* TKDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKDAppDelegate.h; sourceTree = "<group>"; };
 		5041483717F80E5C008D88C6 /* TKDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKDAppDelegate.m; sourceTree = "<group>"; };
 		5041483A17F80E5C008D88C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5041483F17F80E5C008D88C6 /* TKDSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKDSecondViewController.h; sourceTree = "<group>"; };
-		5041484017F80E5C008D88C6 /* TKDSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKDSecondViewController.m; sourceTree = "<group>"; };
 		5041484217F80E5C008D88C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5041484817F80E5C008D88C6 /* TextKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5041484917F80E5C008D88C6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -66,6 +66,11 @@
 		5041486B17F81F2F008D88C6 /* TKDHighlightingTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDHighlightingTextStorage.m; sourceTree = "<group>"; };
 		5041486E17F821E5008D88C6 /* lorem.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lorem.txt; sourceTree = "<group>"; };
 		5041487017F82265008D88C6 /* iText.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iText.txt; sourceTree = "<group>"; };
+		5041487317F8418B008D88C6 /* TKDLayoutingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDLayoutingViewController.h; sourceTree = "<group>"; };
+		5041487417F8418B008D88C6 /* TKDLayoutingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDLayoutingViewController.m; sourceTree = "<group>"; };
+		5041487617F843EA008D88C6 /* layout.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = layout.txt; sourceTree = "<group>"; };
+		5041487817F844E5008D88C6 /* TKDLinkDetectingTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDLinkDetectingTextStorage.h; sourceTree = "<group>"; };
+		5041487917F844E5008D88C6 /* TKDLinkDetectingTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDLinkDetectingTextStorage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +135,7 @@
 				5041483917F80E5C008D88C6 /* Main.storyboard */,
 				5041486217F8112A008D88C6 /* Configuration */,
 				5041486517F8112A008D88C6 /* Highlighting */,
-				5041483F17F80E5C008D88C6 /* TKDSecondViewController.h */,
-				5041484017F80E5C008D88C6 /* TKDSecondViewController.m */,
+				5041487217F8418B008D88C6 /* Layout */,
 				5041484217F80E5C008D88C6 /* Images.xcassets */,
 				5041486D17F821CC008D88C6 /* Texts */,
 				5041482E17F80E5C008D88C6 /* Supporting Files */,
@@ -193,8 +197,20 @@
 			children = (
 				5041486E17F821E5008D88C6 /* lorem.txt */,
 				5041487017F82265008D88C6 /* iText.txt */,
+				5041487617F843EA008D88C6 /* layout.txt */,
 			);
 			path = Texts;
+			sourceTree = "<group>";
+		};
+		5041487217F8418B008D88C6 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				5041487317F8418B008D88C6 /* TKDLayoutingViewController.h */,
+				5041487417F8418B008D88C6 /* TKDLayoutingViewController.m */,
+				5041487817F844E5008D88C6 /* TKDLinkDetectingTextStorage.h */,
+				5041487917F844E5008D88C6 /* TKDLinkDetectingTextStorage.m */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +294,7 @@
 				5041483217F80E5C008D88C6 /* InfoPlist.strings in Resources */,
 				5041487117F82265008D88C6 /* iText.txt in Resources */,
 				5041486F17F821E5008D88C6 /* lorem.txt in Resources */,
+				5041487717F843EA008D88C6 /* layout.txt in Resources */,
 				5041483B17F80E5C008D88C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,8 +317,9 @@
 				5041486C17F81F2F008D88C6 /* TKDHighlightingTextStorage.m in Sources */,
 				5041486817F8112A008D88C6 /* TKDConfigurationViewController.m in Sources */,
 				5041483817F80E5C008D88C6 /* TKDAppDelegate.m in Sources */,
+				5041487A17F844E5008D88C6 /* TKDLinkDetectingTextStorage.m in Sources */,
 				5041486917F8112A008D88C6 /* TKDHighlightingViewController.m in Sources */,
-				5041484117F80E5C008D88C6 /* TKDSecondViewController.m in Sources */,
+				5041487517F8418B008D88C6 /* TKDLayoutingViewController.m in Sources */,
 				5041483417F80E5C008D88C6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
