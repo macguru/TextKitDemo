@@ -23,12 +23,12 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZV7-VL-Kd8">
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZV7-VL-Kd8">
                                 <rect key="frame" x="5" y="230" width="153" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90745137320500002" green="1" blue="0.95263400625740391" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="auf-0B-h3H">
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="auf-0B-h3H">
                                 <rect key="frame" x="163" y="230" width="152" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90745137320500002" green="1" blue="0.95263400625740391" alpha="1" colorSpace="calibratedRGB"/>
@@ -195,6 +195,10 @@
                                     </label>
                                 </subviews>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clip" translatesAutoresizingMaskIntoConstraints="NO" id="y8v-KL-mds">
+                                <rect key="frame" x="224" y="296" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -202,6 +206,7 @@
                     <tabBarItem key="tabBarItem" title="Interaction" image="first" id="ldb-Hx-F5r"/>
                     <connections>
                         <outlet property="circleView" destination="cKh-UK-Zxp" id="Qpg-6g-PU8"/>
+                        <outlet property="clippyView" destination="y8v-KL-mds" id="yFC-N2-yGu"/>
                         <outlet property="textView" destination="c8C-sA-4ba" id="VHo-YI-jgn"/>
                     </connections>
                 </viewController>
@@ -211,9 +216,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="first" width="30" height="30"/>
-        <image name="first" width="30" height="30"/>
+        <image name="clip" width="24" height="24"/>
         <image name="first" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

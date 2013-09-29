@@ -11,6 +11,7 @@
 
 @interface TKDInteractionViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *clippyView;
 @property (weak, nonatomic) IBOutlet TKDCircleView *circleView;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 

@@ -3,26 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "188.png"
+      "filename" : "187-1.png"
     },
     {
-      "resizing" : {
-        "mode" : "9-part",
-        "center" : {
-          "mode" : "fill",
-          "width" : 21,
-          "height" : 22
-        },
-        "capInsets" : {
-          "bottom" : 14,
-          "top" : 0,
-          "right" : 16,
-          "left" : 11
-        }
-      },
       "idiom" : "universal",
-      "filename" : "clip.png",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "187.png"
     }
   ],
   "info" : {

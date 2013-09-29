@@ -11,11 +11,13 @@
 #import "TKDCircleView.h"
 
 
-@implementation TKDInteractionViewController
+@interface TKDInteractionViewController () <UITextViewDelegate>
 {
 	CGPoint _panOffset;
 }
+@end
 
+@implementation TKDInteractionViewController
 
 - (void)viewDidLoad
 {
@@ -24,10 +26,17 @@
 	// Load text
 	[self.textView.textStorage replaceCharactersInRange:NSMakeRange(0, 0) withString:[NSString stringWithContentsOfURL:[NSBundle.mainBundle URLForResource:@"lorem" withExtension:@"txt"] usedEncoding:NULL error:NULL]];
 	
+	// Delegate
+	self.textView.delegate = self;
+	self.clippyView.hidden = YES;
+	
 	// Set up circle pan
 	[self.circleView addGestureRecognizer: [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(circlePan:)]];
 	[self updateExclusionPaths];
 }
+
+
+#pragma mark - Exclusion
 
 - (void)circlePan:(UIPanGestureRecognizer *)pan
 {
@@ -58,6 +67,47 @@
 	// Simply set the exclusion path
 	UIBezierPath *ovalPath = [UIBezierPath bezierPathWithOvalInRect: ovalFrame];
 	self.textView.textContainer.exclusionPaths = @[ovalPath];
+	
+	// And don't forget clippy
+	[self updateClippy];
+}
+
+
+#pragma mark - Selection tracking
+
+- (void)textViewDidChangeSelection:(UITextView *)textView
+{
+	[self updateClippy];
+}
+
+- (void)updateClippy
+{
+	// Zero length selection hide clippy
+	NSRange selectedRange = self.textView.selectedRange;
+	if (!selectedRange.length) {
+		self.clippyView.hidden = YES;
+		return;
+	}
+	
+	// Find last rect of selection
+	NSRange glyphRange = [self.textView.layoutManager glyphRangeForCharacterRange:selectedRange actualCharacterRange:NULL];
+	__block CGRect lastRect;
+	[self.textView.layoutManager enumerateEnclosingRectsForGlyphRange:glyphRange withinSelectedGlyphRange:glyphRange inTextContainer:self.textView.textContainer usingBlock:^(CGRect rect, BOOL *stop) {
+		lastRect = rect;
+	}];
+	
+	
+	// Position clippy at bottom-right of selection
+	CGPoint clippyCenter;
+	clippyCenter.x = CGRectGetMaxX(lastRect) + self.textView.textContainerInset.left;
+	clippyCenter.y = CGRectGetMaxY(lastRect) + self.textView.textContainerInset.top;
+	
+	clippyCenter = [self.textView convertPoint:clippyCenter toView:self.view];
+	clippyCenter.x += self.clippyView.bounds.size.width / 2;
+	clippyCenter.y += self.clippyView.bounds.size.height / 2;
+	
+	self.clippyView.hidden = NO;
+	self.clippyView.center = clippyCenter;
 }
 
 @end
