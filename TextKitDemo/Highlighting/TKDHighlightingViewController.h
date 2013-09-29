@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface TKDHighlightingViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomInset;
 
 @end
