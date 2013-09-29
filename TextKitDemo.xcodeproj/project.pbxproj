@@ -14,7 +14,6 @@
 		5041483417F80E5C008D88C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041483317F80E5C008D88C6 /* main.m */; };
 		5041483817F80E5C008D88C6 /* TKDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041483717F80E5C008D88C6 /* TKDAppDelegate.m */; };
 		5041483B17F80E5C008D88C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5041483917F80E5C008D88C6 /* Main.storyboard */; };
-		5041483E17F80E5C008D88C6 /* TKDFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041483D17F80E5C008D88C6 /* TKDFirstViewController.m */; };
 		5041484117F80E5C008D88C6 /* TKDSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041484017F80E5C008D88C6 /* TKDSecondViewController.m */; };
 		5041484317F80E5C008D88C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5041484217F80E5C008D88C6 /* Images.xcassets */; };
 		5041484A17F80E5C008D88C6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5041484917F80E5C008D88C6 /* XCTest.framework */; };
@@ -22,6 +21,8 @@
 		5041484C17F80E5C008D88C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5041482B17F80E5C008D88C6 /* UIKit.framework */; };
 		5041485417F80E5C008D88C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5041485217F80E5C008D88C6 /* InfoPlist.strings */; };
 		5041485617F80E5C008D88C6 /* TextKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041485517F80E5C008D88C6 /* TextKitDemoTests.m */; };
+		5041486817F8112A008D88C6 /* TKDConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041486417F8112A008D88C6 /* TKDConfigurationViewController.m */; };
+		5041486917F8112A008D88C6 /* TKDHighlightingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041486717F8112A008D88C6 /* TKDHighlightingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +47,6 @@
 		5041483617F80E5C008D88C6 /* TKDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKDAppDelegate.h; sourceTree = "<group>"; };
 		5041483717F80E5C008D88C6 /* TKDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKDAppDelegate.m; sourceTree = "<group>"; };
 		5041483A17F80E5C008D88C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5041483C17F80E5C008D88C6 /* TKDFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKDFirstViewController.h; sourceTree = "<group>"; };
-		5041483D17F80E5C008D88C6 /* TKDFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKDFirstViewController.m; sourceTree = "<group>"; };
 		5041483F17F80E5C008D88C6 /* TKDSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKDSecondViewController.h; sourceTree = "<group>"; };
 		5041484017F80E5C008D88C6 /* TKDSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKDSecondViewController.m; sourceTree = "<group>"; };
 		5041484217F80E5C008D88C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -56,6 +55,10 @@
 		5041485117F80E5C008D88C6 /* TextKitDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextKitDemoTests-Info.plist"; sourceTree = "<group>"; };
 		5041485317F80E5C008D88C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5041485517F80E5C008D88C6 /* TextKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextKitDemoTests.m; sourceTree = "<group>"; };
+		5041486317F8112A008D88C6 /* TKDConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDConfigurationViewController.h; sourceTree = "<group>"; };
+		5041486417F8112A008D88C6 /* TKDConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDConfigurationViewController.m; sourceTree = "<group>"; };
+		5041486617F8112A008D88C6 /* TKDHighlightingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDHighlightingViewController.h; sourceTree = "<group>"; };
+		5041486717F8112A008D88C6 /* TKDHighlightingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDHighlightingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +121,8 @@
 				5041483617F80E5C008D88C6 /* TKDAppDelegate.h */,
 				5041483717F80E5C008D88C6 /* TKDAppDelegate.m */,
 				5041483917F80E5C008D88C6 /* Main.storyboard */,
-				5041483C17F80E5C008D88C6 /* TKDFirstViewController.h */,
-				5041483D17F80E5C008D88C6 /* TKDFirstViewController.m */,
+				5041486217F8112A008D88C6 /* Configuration */,
+				5041486517F8112A008D88C6 /* Highlighting */,
 				5041483F17F80E5C008D88C6 /* TKDSecondViewController.h */,
 				5041484017F80E5C008D88C6 /* TKDSecondViewController.m */,
 				5041484217F80E5C008D88C6 /* Images.xcassets */,
@@ -155,6 +158,24 @@
 				5041485217F80E5C008D88C6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5041486217F8112A008D88C6 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				5041486317F8112A008D88C6 /* TKDConfigurationViewController.h */,
+				5041486417F8112A008D88C6 /* TKDConfigurationViewController.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		5041486517F8112A008D88C6 /* Highlighting */ = {
+			isa = PBXGroup;
+			children = (
+				5041486617F8112A008D88C6 /* TKDHighlightingViewController.h */,
+				5041486717F8112A008D88C6 /* TKDHighlightingViewController.m */,
+			);
+			path = Highlighting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5041486817F8112A008D88C6 /* TKDConfigurationViewController.m in Sources */,
 				5041483817F80E5C008D88C6 /* TKDAppDelegate.m in Sources */,
-				5041483E17F80E5C008D88C6 /* TKDFirstViewController.m in Sources */,
+				5041486917F8112A008D88C6 /* TKDHighlightingViewController.m in Sources */,
 				5041484117F80E5C008D88C6 /* TKDSecondViewController.m in Sources */,
 				5041483417F80E5C008D88C6 /* main.m in Sources */,
 			);

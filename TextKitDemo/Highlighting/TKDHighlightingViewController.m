@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Max Seelemann. All rights reserved.
 //
 
-#import "TKDFirstViewController.h"
+#import "TKDHighlightingViewController.h"
 
-@interface TKDFirstViewController ()
+@interface TKDHighlightingViewController ()
 
 @end
 
-@implementation TKDFirstViewController
+@implementation TKDHighlightingViewController
 
 - (void)viewDidLoad
 {

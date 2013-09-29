@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TKDFirstViewController : UIViewController
+@interface TKDHighlightingViewController : UIViewController
 
 @end
