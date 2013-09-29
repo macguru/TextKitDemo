@@ -29,6 +29,8 @@
 		5041487717F843EA008D88C6 /* layout.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5041487617F843EA008D88C6 /* layout.txt */; };
 		5041487A17F844E5008D88C6 /* TKDLinkDetectingTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041487917F844E5008D88C6 /* TKDLinkDetectingTextStorage.m */; };
 		5041487D17F84DB2008D88C6 /* TKDOutliningLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041487C17F84DB2008D88C6 /* TKDOutliningLayoutManager.m */; };
+		5041488117F85464008D88C6 /* TKDInteractionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041488017F85464008D88C6 /* TKDInteractionViewController.m */; };
+		5041488417F854EF008D88C6 /* TKDCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041488317F854EF008D88C6 /* TKDCircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,10 @@
 		5041487917F844E5008D88C6 /* TKDLinkDetectingTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDLinkDetectingTextStorage.m; sourceTree = "<group>"; };
 		5041487B17F84DB2008D88C6 /* TKDOutliningLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDOutliningLayoutManager.h; sourceTree = "<group>"; };
 		5041487C17F84DB2008D88C6 /* TKDOutliningLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDOutliningLayoutManager.m; sourceTree = "<group>"; };
+		5041487F17F85464008D88C6 /* TKDInteractionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDInteractionViewController.h; sourceTree = "<group>"; };
+		5041488017F85464008D88C6 /* TKDInteractionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDInteractionViewController.m; sourceTree = "<group>"; };
+		5041488217F854EF008D88C6 /* TKDCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDCircleView.h; sourceTree = "<group>"; };
+		5041488317F854EF008D88C6 /* TKDCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDCircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,7 @@
 				5041486217F8112A008D88C6 /* Configuration */,
 				5041486517F8112A008D88C6 /* Highlighting */,
 				5041487217F8418B008D88C6 /* Layout */,
+				5041487E17F85448008D88C6 /* Interaction */,
 				5041484217F80E5C008D88C6 /* Images.xcassets */,
 				5041486D17F821CC008D88C6 /* Texts */,
 				5041482E17F80E5C008D88C6 /* Supporting Files */,
@@ -216,6 +223,17 @@
 				5041487917F844E5008D88C6 /* TKDLinkDetectingTextStorage.m */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		5041487E17F85448008D88C6 /* Interaction */ = {
+			isa = PBXGroup;
+			children = (
+				5041487F17F85464008D88C6 /* TKDInteractionViewController.h */,
+				5041488017F85464008D88C6 /* TKDInteractionViewController.m */,
+				5041488217F854EF008D88C6 /* TKDCircleView.h */,
+				5041488317F854EF008D88C6 /* TKDCircleView.m */,
+			);
+			path = Interaction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,8 +337,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5041488417F854EF008D88C6 /* TKDCircleView.m in Sources */,
 				5041486C17F81F2F008D88C6 /* TKDHighlightingTextStorage.m in Sources */,
 				5041486817F8112A008D88C6 /* TKDConfigurationViewController.m in Sources */,
+				5041488117F85464008D88C6 /* TKDInteractionViewController.m in Sources */,
 				5041483817F80E5C008D88C6 /* TKDAppDelegate.m in Sources */,
 				5041487D17F84DB2008D88C6 /* TKDOutliningLayoutManager.m in Sources */,
 				5041487A17F844E5008D88C6 /* TKDLinkDetectingTextStorage.m in Sources */,
