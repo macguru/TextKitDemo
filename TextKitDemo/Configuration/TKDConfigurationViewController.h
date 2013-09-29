@@ -11,9 +11,9 @@
 @interface TKDConfigurationViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextView *singleTextView;
-@property (weak, nonatomic) IBOutlet UITextView *firstTextView;
-@property (weak, nonatomic) IBOutlet UITextView *secondTextView;
 
+@property (weak, nonatomic) IBOutlet UIView *firstContainerView;
+@property (weak, nonatomic) IBOutlet UIView *secondContainerView;
 
 - (IBAction)endEditing:(UIBarButtonItem *)sender;
 

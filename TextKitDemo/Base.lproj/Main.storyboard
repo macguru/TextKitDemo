@@ -13,47 +13,44 @@
                         <viewControllerLayoutGuide type="bottom" id="1bF-nm-pBy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oOc-3g-0JT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYe-Ji-kZb">
-                                <rect key="frame" x="20" y="64" width="280" height="214"/>
+                                <rect key="frame" x="5" y="5" width="310" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99743288622493753" green="1" blue="0.91486229109652462" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6y-UU-k5s">
-                                <rect key="frame" x="20" y="286" width="139" height="213"/>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZV7-VL-Kd8">
+                                <rect key="frame" x="5" y="230" width="153" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94144815948450833" green="0.97199554947534716" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iew-4U-Oam">
-                                <rect key="frame" x="161" y="286" width="139" height="213"/>
+                                <color key="backgroundColor" red="0.90745137320500002" green="1" blue="0.95263400625740391" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="auf-0B-h3H">
+                                <rect key="frame" x="163" y="230" width="152" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94144815948450833" green="0.97199554947534716" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <color key="backgroundColor" red="0.90745137320500002" green="1" blue="0.95263400625740391" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1bF-nm-pBy" firstAttribute="top" secondItem="iew-4U-Oam" secondAttribute="bottom" constant="20" id="3c0-qR-Tdr"/>
-                            <constraint firstItem="JYe-Ji-kZb" firstAttribute="top" secondItem="Pe1-8H-m0L" secondAttribute="bottom" id="AZQ-A2-NT0"/>
-                            <constraint firstItem="iew-4U-Oam" firstAttribute="top" secondItem="JYe-Ji-kZb" secondAttribute="bottom" constant="8" id="CvM-gh-mwg"/>
-                            <constraint firstItem="1bF-nm-pBy" firstAttribute="top" secondItem="p6y-UU-k5s" secondAttribute="bottom" constant="20" id="H3T-9Y-Rdr"/>
-                            <constraint firstItem="p6y-UU-k5s" firstAttribute="width" secondItem="iew-4U-Oam" secondAttribute="width" id="HaF-gz-MUZ"/>
-                            <constraint firstItem="iew-4U-Oam" firstAttribute="leading" secondItem="p6y-UU-k5s" secondAttribute="trailing" constant="2" id="NSi-j5-QjE"/>
-                            <constraint firstItem="p6y-UU-k5s" firstAttribute="top" secondItem="JYe-Ji-kZb" secondAttribute="bottom" constant="8" id="bWA-R6-opS"/>
-                            <constraint firstItem="JYe-Ji-kZb" firstAttribute="leading" secondItem="oOc-3g-0JT" secondAttribute="leading" constant="20" id="c1D-EW-z0F"/>
-                            <constraint firstItem="p6y-UU-k5s" firstAttribute="leading" secondItem="oOc-3g-0JT" secondAttribute="leading" constant="20" id="cMN-TE-cwF"/>
-                            <constraint firstAttribute="trailing" secondItem="iew-4U-Oam" secondAttribute="trailing" constant="20" id="dyR-DJ-Ga9"/>
-                            <constraint firstItem="JYe-Ji-kZb" firstAttribute="height" secondItem="iew-4U-Oam" secondAttribute="height" id="ifA-fn-y6D"/>
-                            <constraint firstAttribute="trailing" secondItem="JYe-Ji-kZb" secondAttribute="trailing" constant="20" id="zvl-zD-rRw"/>
+                            <constraint firstItem="ZV7-VL-Kd8" firstAttribute="leading" secondItem="oOc-3g-0JT" secondAttribute="leading" constant="5" id="2XP-ee-kkE"/>
+                            <constraint firstItem="JYe-Ji-kZb" firstAttribute="top" secondItem="Pe1-8H-m0L" secondAttribute="bottom" constant="5" id="AZQ-A2-NT0"/>
+                            <constraint firstItem="ZV7-VL-Kd8" firstAttribute="top" secondItem="JYe-Ji-kZb" secondAttribute="bottom" constant="5" id="BiR-We-0bY"/>
+                            <constraint firstAttribute="trailing" secondItem="auf-0B-h3H" secondAttribute="trailing" constant="5" id="D8f-PV-TxY"/>
+                            <constraint firstItem="1bF-nm-pBy" firstAttribute="top" secondItem="ZV7-VL-Kd8" secondAttribute="bottom" constant="5" id="HFn-Jn-QqL"/>
+                            <constraint firstItem="1bF-nm-pBy" firstAttribute="top" secondItem="auf-0B-h3H" secondAttribute="bottom" constant="5" id="KWp-nd-XB1"/>
+                            <constraint firstItem="ZV7-VL-Kd8" firstAttribute="width" secondItem="auf-0B-h3H" secondAttribute="width" id="bFn-oQ-1md"/>
+                            <constraint firstItem="JYe-Ji-kZb" firstAttribute="leading" secondItem="oOc-3g-0JT" secondAttribute="leading" constant="5" id="c1D-EW-z0F"/>
+                            <constraint firstItem="auf-0B-h3H" firstAttribute="top" secondItem="JYe-Ji-kZb" secondAttribute="bottom" constant="5" id="gSk-aR-OxF"/>
+                            <constraint firstItem="JYe-Ji-kZb" firstAttribute="height" secondItem="auf-0B-h3H" secondAttribute="height" id="kns-Zp-IuC"/>
+                            <constraint firstItem="auf-0B-h3H" firstAttribute="leading" secondItem="ZV7-VL-Kd8" secondAttribute="trailing" constant="5" id="uZt-fH-WBf"/>
+                            <constraint firstAttribute="trailing" secondItem="JYe-Ji-kZb" secondAttribute="trailing" constant="5" id="zvl-zD-rRw"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="jIq-zK-xwR">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="AII-ij-tcN">
                             <connections>
@@ -62,8 +59,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="firstTextView" destination="p6y-UU-k5s" id="IOH-Ce-SBG"/>
-                        <outlet property="secondTextView" destination="iew-4U-Oam" id="fcs-aa-DeS"/>
+                        <outlet property="firstContainerView" destination="ZV7-VL-Kd8" id="j7g-8S-IGf"/>
+                        <outlet property="secondContainerView" destination="auf-0B-h3H" id="tBy-kC-6fx"/>
                         <outlet property="singleTextView" destination="JYe-Ji-kZb" id="H38-cm-duT"/>
                     </connections>
                 </viewController>
@@ -74,7 +71,7 @@
         <!--Highlighting View Controller - First-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
-                <viewController title="First" id="CZ4-MO-1fc" customClass="TKDHighlightingViewController" sceneMemberID="viewController">
+                <viewController title="First" extendedLayoutIncludesOpaqueBars="YES" id="CZ4-MO-1fc" customClass="TKDHighlightingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jsf-jx-aif"/>
                         <viewControllerLayoutGuide type="bottom" id="KCW-xl-pHc"/>
