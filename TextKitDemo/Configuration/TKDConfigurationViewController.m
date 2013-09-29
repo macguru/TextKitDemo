@@ -14,8 +14,9 @@
 {
 	[super viewDidLoad];
 	
-	// Take text storage from single view
+	// Load text
 	NSTextStorage *singleTextStorage = self.singleTextView.textStorage;
+	[singleTextStorage replaceCharactersInRange:NSMakeRange(0, 0) withString:[NSString stringWithContentsOfURL:[NSBundle.mainBundle URLForResource:@"lorem" withExtension:@"txt"] usedEncoding:NULL error:NULL]];
 	
 	
 	// Connect first layout manager to the same text storage

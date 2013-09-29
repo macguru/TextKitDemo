@@ -8,22 +8,26 @@
 
 #import "TKDHighlightingViewController.h"
 
-@interface TKDHighlightingViewController ()
+#import "TKDHighlightingTextStorage.h"
 
-@end
 
 @implementation TKDHighlightingViewController
+{
+	// Text storage must be held strongly, only the default storage is retained by the text view.
+	TKDHighlightingTextStorage *_textStorage;
+}
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+	// Replace text storage
+	_textStorage = [TKDHighlightingTextStorage new];
+	[_textStorage addLayoutManager: self.textView.layoutManager];
+	
+	// Load iText
+	[_textStorage replaceCharactersInRange:NSMakeRange(0, 0) withString:[NSString stringWithContentsOfURL:[NSBundle.mainBundle URLForResource:@"iText" withExtension:@"txt"] usedEncoding:NULL error:NULL]];
 }
 
 @end

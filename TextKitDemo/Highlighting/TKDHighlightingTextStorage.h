@@ -1,5 +1,5 @@
 //
-//  TKDFirstViewController.h
+//  TKDHighlightingTextStorage.h
 //  TextKitDemo
 //
 //  Created by Max Seelemann on 29.09.13.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TKDHighlightingViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+@interface TKDHighlightingTextStorage : NSTextStorage
 
 @end

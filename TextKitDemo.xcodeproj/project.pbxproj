@@ -23,6 +23,9 @@
 		5041485617F80E5C008D88C6 /* TextKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041485517F80E5C008D88C6 /* TextKitDemoTests.m */; };
 		5041486817F8112A008D88C6 /* TKDConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041486417F8112A008D88C6 /* TKDConfigurationViewController.m */; };
 		5041486917F8112A008D88C6 /* TKDHighlightingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041486717F8112A008D88C6 /* TKDHighlightingViewController.m */; };
+		5041486C17F81F2F008D88C6 /* TKDHighlightingTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041486B17F81F2F008D88C6 /* TKDHighlightingTextStorage.m */; };
+		5041486F17F821E5008D88C6 /* lorem.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5041486E17F821E5008D88C6 /* lorem.txt */; };
+		5041487117F82265008D88C6 /* iText.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5041487017F82265008D88C6 /* iText.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,10 @@
 		5041486417F8112A008D88C6 /* TKDConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDConfigurationViewController.m; sourceTree = "<group>"; };
 		5041486617F8112A008D88C6 /* TKDHighlightingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDHighlightingViewController.h; sourceTree = "<group>"; };
 		5041486717F8112A008D88C6 /* TKDHighlightingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDHighlightingViewController.m; sourceTree = "<group>"; };
+		5041486A17F81F2F008D88C6 /* TKDHighlightingTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDHighlightingTextStorage.h; sourceTree = "<group>"; };
+		5041486B17F81F2F008D88C6 /* TKDHighlightingTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDHighlightingTextStorage.m; sourceTree = "<group>"; };
+		5041486E17F821E5008D88C6 /* lorem.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lorem.txt; sourceTree = "<group>"; };
+		5041487017F82265008D88C6 /* iText.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iText.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +133,7 @@
 				5041483F17F80E5C008D88C6 /* TKDSecondViewController.h */,
 				5041484017F80E5C008D88C6 /* TKDSecondViewController.m */,
 				5041484217F80E5C008D88C6 /* Images.xcassets */,
+				5041486D17F821CC008D88C6 /* Texts */,
 				5041482E17F80E5C008D88C6 /* Supporting Files */,
 			);
 			path = TextKitDemo;
@@ -174,8 +182,19 @@
 			children = (
 				5041486617F8112A008D88C6 /* TKDHighlightingViewController.h */,
 				5041486717F8112A008D88C6 /* TKDHighlightingViewController.m */,
+				5041486A17F81F2F008D88C6 /* TKDHighlightingTextStorage.h */,
+				5041486B17F81F2F008D88C6 /* TKDHighlightingTextStorage.m */,
 			);
 			path = Highlighting;
+			sourceTree = "<group>";
+		};
+		5041486D17F821CC008D88C6 /* Texts */ = {
+			isa = PBXGroup;
+			children = (
+				5041486E17F821E5008D88C6 /* lorem.txt */,
+				5041487017F82265008D88C6 /* iText.txt */,
+			);
+			path = Texts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +276,8 @@
 			files = (
 				5041484317F80E5C008D88C6 /* Images.xcassets in Resources */,
 				5041483217F80E5C008D88C6 /* InfoPlist.strings in Resources */,
+				5041487117F82265008D88C6 /* iText.txt in Resources */,
+				5041486F17F821E5008D88C6 /* lorem.txt in Resources */,
 				5041483B17F80E5C008D88C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5041486C17F81F2F008D88C6 /* TKDHighlightingTextStorage.m in Sources */,
 				5041486817F8112A008D88C6 /* TKDConfigurationViewController.m in Sources */,
 				5041483817F80E5C008D88C6 /* TKDAppDelegate.m in Sources */,
 				5041486917F8112A008D88C6 /* TKDHighlightingViewController.m in Sources */,
