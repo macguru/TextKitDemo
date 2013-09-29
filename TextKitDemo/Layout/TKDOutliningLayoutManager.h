@@ -1,5 +1,5 @@
 //
-//  TKDSecondViewController.h
+//  TKDOutliningLayoutManager.h
 //  TextKitDemo
 //
 //  Created by Max Seelemann on 29.09.13.
@@ -8,5 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TKDLayoutingViewController : UIViewController
+@interface TKDOutliningLayoutManager : NSLayoutManager
+
 @end

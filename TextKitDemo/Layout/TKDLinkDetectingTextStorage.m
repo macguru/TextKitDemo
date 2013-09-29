@@ -57,12 +57,14 @@
 	NSRange paragaphRange = [self.string paragraphRangeForRange: NSMakeRange(range.location, str.length)];
 	[self removeAttribute:NSLinkAttributeName range:paragaphRange];
 	[self removeAttribute:NSBackgroundColorAttributeName range:paragaphRange];
+	[self removeAttribute:NSUnderlineStyleAttributeName range:paragaphRange];
 	
 	// Find all iWords in range
 	[linkDetector enumerateMatchesInString:self.string options:0 range:paragaphRange usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
 		// Add red highlight color
 		[self addAttribute:NSLinkAttributeName value:result.URL range:result.range];
 		[self addAttribute:NSBackgroundColorAttributeName value:[UIColor yellowColor] range:result.range];
+		[self addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleSingle) range:result.range];
 	}];
 }
 

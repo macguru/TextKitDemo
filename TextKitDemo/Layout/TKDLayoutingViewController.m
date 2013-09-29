@@ -9,6 +9,7 @@
 #import "TKDLayoutingViewController.h"
 
 #import "TKDLinkDetectingTextStorage.h"
+#import "TKDOutliningLayoutManager.h"
 
 
 @interface TKDLayoutingViewController () <NSLayoutManagerDelegate>
@@ -24,14 +25,25 @@
 {
     [super viewDidLoad];
 	
-	// Set delegate
-	self.textView.layoutManager.delegate = self;
-	
-	// Replace text storage
+	// Create componentes
 	_textStorage = [TKDLinkDetectingTextStorage new];
-	[_textStorage addLayoutManager: self.textView.layoutManager];
 	
-	// Load iText
+	NSLayoutManager *layoutManager = [TKDOutliningLayoutManager new];
+	[_textStorage addLayoutManager: layoutManager];
+	
+	NSTextContainer *textContainer = [[NSTextContainer alloc] initWithSize: CGSizeZero];
+	[layoutManager addTextContainer: textContainer];
+	
+	UITextView *textView = [[UITextView alloc] initWithFrame:CGRectInset(self.view.bounds, 5, 20) textContainer: textContainer];
+	textView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+	textView.translatesAutoresizingMaskIntoConstraints = YES;
+	[self.view addSubview: textView];
+	
+	
+	// Set delegate
+	layoutManager.delegate = self;
+	
+	// Load layout text
 	[_textStorage replaceCharactersInRange:NSMakeRange(0, 0) withString:[NSString stringWithContentsOfURL:[NSBundle.mainBundle URLForResource:@"layout" withExtension:@"txt"] usedEncoding:NULL error:NULL]];
 }
 
@@ -58,36 +70,6 @@
 - (CGFloat)layoutManager:(NSLayoutManager *)layoutManager paragraphSpacingAfterGlyphAtIndex:(NSUInteger)glyphIndex withProposedLineFragmentRect:(CGRect)rect
 {
 	return 10;
-}
-
-
-#pragma mark - Keyboard status
-
-- (void)viewDidAppear:(BOOL)animated
-{
-	[super viewDidAppear: animated];
-	
-	[NSNotificationCenter.defaultCenter addObserver:self selector:@selector(keyboardWillShowOrHide:) name:UIKeyboardWillShowNotification object:nil];
-	[NSNotificationCenter.defaultCenter addObserver:self selector:@selector(keyboardWillShowOrHide:) name:UIKeyboardDidHideNotification object:nil];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear: animated];
-	
-	[NSNotificationCenter.defaultCenter removeObserver:self name:UIKeyboardWillShowNotification object:nil];
-	[NSNotificationCenter.defaultCenter removeObserver:self name:UIKeyboardWillHideNotification object:nil];
-}
-
-- (void)keyboardWillShowOrHide:(NSNotification *)notification
-{
-	CGFloat newInset;
-	if ([notification.name isEqualToString: UIKeyboardWillShowNotification])
-		newInset = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size.height;
-	else
-		newInset = 0;
-	
-	[self.bottomInset setConstant: newInset];
 }
 
 @end

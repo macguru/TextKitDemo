@@ -28,6 +28,7 @@
 		5041487517F8418B008D88C6 /* TKDLayoutingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041487417F8418B008D88C6 /* TKDLayoutingViewController.m */; };
 		5041487717F843EA008D88C6 /* layout.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5041487617F843EA008D88C6 /* layout.txt */; };
 		5041487A17F844E5008D88C6 /* TKDLinkDetectingTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041487917F844E5008D88C6 /* TKDLinkDetectingTextStorage.m */; };
+		5041487D17F84DB2008D88C6 /* TKDOutliningLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041487C17F84DB2008D88C6 /* TKDOutliningLayoutManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		5041487617F843EA008D88C6 /* layout.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = layout.txt; sourceTree = "<group>"; };
 		5041487817F844E5008D88C6 /* TKDLinkDetectingTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDLinkDetectingTextStorage.h; sourceTree = "<group>"; };
 		5041487917F844E5008D88C6 /* TKDLinkDetectingTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDLinkDetectingTextStorage.m; sourceTree = "<group>"; };
+		5041487B17F84DB2008D88C6 /* TKDOutliningLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDOutliningLayoutManager.h; sourceTree = "<group>"; };
+		5041487C17F84DB2008D88C6 /* TKDOutliningLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDOutliningLayoutManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +210,8 @@
 			children = (
 				5041487317F8418B008D88C6 /* TKDLayoutingViewController.h */,
 				5041487417F8418B008D88C6 /* TKDLayoutingViewController.m */,
+				5041487B17F84DB2008D88C6 /* TKDOutliningLayoutManager.h */,
+				5041487C17F84DB2008D88C6 /* TKDOutliningLayoutManager.m */,
 				5041487817F844E5008D88C6 /* TKDLinkDetectingTextStorage.h */,
 				5041487917F844E5008D88C6 /* TKDLinkDetectingTextStorage.m */,
 			);
@@ -317,6 +322,7 @@
 				5041486C17F81F2F008D88C6 /* TKDHighlightingTextStorage.m in Sources */,
 				5041486817F8112A008D88C6 /* TKDConfigurationViewController.m in Sources */,
 				5041483817F80E5C008D88C6 /* TKDAppDelegate.m in Sources */,
+				5041487D17F84DB2008D88C6 /* TKDOutliningLayoutManager.m in Sources */,
 				5041487A17F844E5008D88C6 /* TKDLinkDetectingTextStorage.m in Sources */,
 				5041486917F8112A008D88C6 /* TKDHighlightingViewController.m in Sources */,
 				5041487517F8418B008D88C6 /* TKDLayoutingViewController.m in Sources */,
