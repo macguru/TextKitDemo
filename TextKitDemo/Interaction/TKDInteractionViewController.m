@@ -33,6 +33,9 @@
 	// Set up circle pan
 	[self.circleView addGestureRecognizer: [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(circlePan:)]];
 	[self updateExclusionPaths];
+	
+	// Enable hyphenation
+	self.textView.layoutManager.hyphenationFactor = 1.0;
 }
 
 
