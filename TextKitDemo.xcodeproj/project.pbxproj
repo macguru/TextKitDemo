@@ -15,11 +15,6 @@
 		5041483817F80E5C008D88C6 /* TKDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041483717F80E5C008D88C6 /* TKDAppDelegate.m */; };
 		5041483B17F80E5C008D88C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5041483917F80E5C008D88C6 /* Main.storyboard */; };
 		5041484317F80E5C008D88C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5041484217F80E5C008D88C6 /* Images.xcassets */; };
-		5041484A17F80E5C008D88C6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5041484917F80E5C008D88C6 /* XCTest.framework */; };
-		5041484B17F80E5C008D88C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5041482717F80E5C008D88C6 /* Foundation.framework */; };
-		5041484C17F80E5C008D88C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5041482B17F80E5C008D88C6 /* UIKit.framework */; };
-		5041485417F80E5C008D88C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5041485217F80E5C008D88C6 /* InfoPlist.strings */; };
-		5041485617F80E5C008D88C6 /* TextKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041485517F80E5C008D88C6 /* TextKitDemoTests.m */; };
 		5041486817F8112A008D88C6 /* TKDConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041486417F8112A008D88C6 /* TKDConfigurationViewController.m */; };
 		5041486917F8112A008D88C6 /* TKDHighlightingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041486717F8112A008D88C6 /* TKDHighlightingViewController.m */; };
 		5041486C17F81F2F008D88C6 /* TKDHighlightingTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041486B17F81F2F008D88C6 /* TKDHighlightingTextStorage.m */; };
@@ -32,16 +27,6 @@
 		5041488117F85464008D88C6 /* TKDInteractionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041488017F85464008D88C6 /* TKDInteractionViewController.m */; };
 		5041488417F854EF008D88C6 /* TKDCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5041488317F854EF008D88C6 /* TKDCircleView.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5041484D17F80E5C008D88C6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5041481C17F80E5C008D88C6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5041482317F80E5C008D88C6;
-			remoteInfo = TextKitDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5041482417F80E5C008D88C6 /* TextKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,11 +41,7 @@
 		5041483717F80E5C008D88C6 /* TKDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKDAppDelegate.m; sourceTree = "<group>"; };
 		5041483A17F80E5C008D88C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5041484217F80E5C008D88C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5041484817F80E5C008D88C6 /* TextKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5041484917F80E5C008D88C6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		5041485117F80E5C008D88C6 /* TextKitDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextKitDemoTests-Info.plist"; sourceTree = "<group>"; };
-		5041485317F80E5C008D88C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5041485517F80E5C008D88C6 /* TextKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextKitDemoTests.m; sourceTree = "<group>"; };
 		5041486317F8112A008D88C6 /* TKDConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDConfigurationViewController.h; sourceTree = "<group>"; };
 		5041486417F8112A008D88C6 /* TKDConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDConfigurationViewController.m; sourceTree = "<group>"; };
 		5041486617F8112A008D88C6 /* TKDHighlightingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDHighlightingViewController.h; sourceTree = "<group>"; };
@@ -93,16 +74,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5041484517F80E5C008D88C6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5041484A17F80E5C008D88C6 /* XCTest.framework in Frameworks */,
-				5041484C17F80E5C008D88C6 /* UIKit.framework in Frameworks */,
-				5041484B17F80E5C008D88C6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -110,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				5041482D17F80E5C008D88C6 /* TextKitDemo */,
-				5041484F17F80E5C008D88C6 /* TextKitDemoTests */,
 				5041482617F80E5C008D88C6 /* Frameworks */,
 				5041482517F80E5C008D88C6 /* Products */,
 			);
@@ -120,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				5041482417F80E5C008D88C6 /* TextKitDemo.app */,
-				5041484817F80E5C008D88C6 /* TextKitDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,24 +129,6 @@
 				5041483017F80E5C008D88C6 /* InfoPlist.strings */,
 				5041483317F80E5C008D88C6 /* main.m */,
 				5041483517F80E5C008D88C6 /* TextKitDemo-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5041484F17F80E5C008D88C6 /* TextKitDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				5041485517F80E5C008D88C6 /* TextKitDemoTests.m */,
-				5041485017F80E5C008D88C6 /* Supporting Files */,
-			);
-			path = TextKitDemoTests;
-			sourceTree = "<group>";
-		};
-		5041485017F80E5C008D88C6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5041485117F80E5C008D88C6 /* TextKitDemoTests-Info.plist */,
-				5041485217F80E5C008D88C6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -256,24 +207,6 @@
 			productReference = 5041482417F80E5C008D88C6 /* TextKitDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5041484717F80E5C008D88C6 /* TextKitDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5041485C17F80E5C008D88C6 /* Build configuration list for PBXNativeTarget "TextKitDemoTests" */;
-			buildPhases = (
-				5041484417F80E5C008D88C6 /* Sources */,
-				5041484517F80E5C008D88C6 /* Frameworks */,
-				5041484617F80E5C008D88C6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5041484E17F80E5C008D88C6 /* PBXTargetDependency */,
-			);
-			name = TextKitDemoTests;
-			productName = TextKitDemoTests;
-			productReference = 5041484817F80E5C008D88C6 /* TextKitDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -283,11 +216,6 @@
 				CLASSPREFIX = TKD;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Max Seelemann";
-				TargetAttributes = {
-					5041484717F80E5C008D88C6 = {
-						TestTargetID = 5041482317F80E5C008D88C6;
-					};
-				};
 			};
 			buildConfigurationList = 5041481F17F80E5C008D88C6 /* Build configuration list for PBXProject "TextKitDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -303,7 +231,6 @@
 			projectRoot = "";
 			targets = (
 				5041482317F80E5C008D88C6 /* TextKitDemo */,
-				5041484717F80E5C008D88C6 /* TextKitDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -319,14 +246,6 @@
 				5041486F17F821E5008D88C6 /* lorem.txt in Resources */,
 				5041487717F843EA008D88C6 /* layout.txt in Resources */,
 				5041483B17F80E5C008D88C6 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5041484617F80E5C008D88C6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5041485417F80E5C008D88C6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,23 +269,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5041484417F80E5C008D88C6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5041485617F80E5C008D88C6 /* TextKitDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5041484E17F80E5C008D88C6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5041482317F80E5C008D88C6 /* TextKitDemo */;
-			targetProxy = 5041484D17F80E5C008D88C6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5041483017F80E5C008D88C6 /* InfoPlist.strings */ = {
@@ -383,14 +286,6 @@
 				5041483A17F80E5C008D88C6 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5041485217F80E5C008D88C6 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5041485317F80E5C008D88C6 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -494,48 +389,6 @@
 			};
 			name = Release;
 		};
-		5041485D17F80E5C008D88C6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TextKitDemo.app/TextKitDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TextKitDemo/TextKitDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "TextKitDemoTests/TextKitDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		5041485E17F80E5C008D88C6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TextKitDemo.app/TextKitDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TextKitDemo/TextKitDemo-Prefix.pch";
-				INFOPLIST_FILE = "TextKitDemoTests/TextKitDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -555,14 +408,7 @@
 				5041485B17F80E5C008D88C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		5041485C17F80E5C008D88C6 /* Build configuration list for PBXNativeTarget "TextKitDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5041485D17F80E5C008D88C6 /* Debug */,
-				5041485E17F80E5C008D88C6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
