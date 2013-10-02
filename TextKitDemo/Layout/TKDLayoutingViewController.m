@@ -37,6 +37,7 @@
 	UITextView *textView = [[UITextView alloc] initWithFrame:CGRectInset(self.view.bounds, 5, 20) textContainer: textContainer];
 	textView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 	textView.translatesAutoresizingMaskIntoConstraints = YES;
+	textView.keyboardDismissMode = UIScrollViewKeyboardDismissModeInteractive;
 	[self.view addSubview: textView];
 	
 	
