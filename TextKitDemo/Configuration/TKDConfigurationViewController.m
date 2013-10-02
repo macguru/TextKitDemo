@@ -10,8 +10,8 @@
 
 @interface TKDConfigurationViewController ()
 
-@property (weak, nonatomic) UITextView *firstTextView;
-@property (weak, nonatomic) UITextView *secondTextView;
+@property (weak, nonatomic) UITextView *otherTextView;
+@property (weak, nonatomic) UITextView *thirdTextView;
 
 @end
 
@@ -22,39 +22,39 @@
 	[super viewDidLoad];
 	
 	// Load text
-	NSTextStorage *upperTextStorage = self.singleTextView.textStorage;
-	[upperTextStorage replaceCharactersInRange:NSMakeRange(0, 0) withString:[NSString stringWithContentsOfURL:[NSBundle.mainBundle URLForResource:@"lorem" withExtension:@"txt"] usedEncoding:NULL error:NULL]];
+	NSTextStorage *sharedTextStorage = self.originalTextView.textStorage;
+	[sharedTextStorage replaceCharactersInRange:NSMakeRange(0, 0) withString:[NSString stringWithContentsOfURL:[NSBundle.mainBundle URLForResource:@"lorem" withExtension:@"txt"] usedEncoding:NULL error:NULL]];
 	
 	
 	// Create a new text view on the original text storage
-	NSLayoutManager *lowerLayoutManager = [NSLayoutManager new];
-	[upperTextStorage addLayoutManager: lowerLayoutManager];
+	NSLayoutManager *otherLayoutManager = [NSLayoutManager new];
+	[sharedTextStorage addLayoutManager: otherLayoutManager];
 	
-	NSTextContainer *firstTextContainer = [NSTextContainer new];
-	[lowerLayoutManager addTextContainer: firstTextContainer];
+	NSTextContainer *otherTextContainer = [NSTextContainer new];
+	[otherLayoutManager addTextContainer: otherTextContainer];
 	
-	UITextView *firstTextView = [[UITextView alloc] initWithFrame:self.firstContainerView.bounds textContainer:firstTextContainer];
-	firstTextView.backgroundColor = self.firstContainerView.backgroundColor;
-	firstTextView.translatesAutoresizingMaskIntoConstraints = YES;
-	firstTextView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+	UITextView *otherTextView = [[UITextView alloc] initWithFrame:self.otherContainerView.bounds textContainer:otherTextContainer];
+	otherTextView.backgroundColor = self.otherContainerView.backgroundColor;
+	otherTextView.translatesAutoresizingMaskIntoConstraints = YES;
+	otherTextView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	
-	firstTextView.scrollEnabled = NO;
+	otherTextView.scrollEnabled = NO;
 	
-	[self.firstContainerView addSubview: firstTextView];
-	self.firstTextView = firstTextView;
+	[self.otherContainerView addSubview: otherTextView];
+	self.otherTextView = otherTextView;
 	
 	
 	// Create a second text view on the new layout manager text storage
-	NSTextContainer *secondTextContainer = [NSTextContainer new];
-	[lowerLayoutManager addTextContainer: secondTextContainer];
+	NSTextContainer *thirdTextContainer = [NSTextContainer new];
+	[otherLayoutManager addTextContainer: thirdTextContainer];
 	
-	UITextView *secondTextView = [[UITextView alloc] initWithFrame:self.secondContainerView.bounds textContainer:secondTextContainer];
-	secondTextView.backgroundColor = self.secondContainerView.backgroundColor;
-	secondTextView.translatesAutoresizingMaskIntoConstraints = YES;
-	secondTextView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+	UITextView *thirdTextView = [[UITextView alloc] initWithFrame:self.thirdContainerView.bounds textContainer:thirdTextContainer];
+	thirdTextView.backgroundColor = self.thirdContainerView.backgroundColor;
+	thirdTextView.translatesAutoresizingMaskIntoConstraints = YES;
+	thirdTextView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	
-	[self.secondContainerView addSubview: secondTextView];
-	self.secondTextView = secondTextView;
+	[self.thirdContainerView addSubview: thirdTextView];
+	self.thirdTextView = thirdTextView;
 }
 
 - (IBAction)endEditing:(UIBarButtonItem *)sender

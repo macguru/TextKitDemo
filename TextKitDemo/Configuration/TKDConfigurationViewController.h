@@ -10,10 +10,10 @@
 
 @interface TKDConfigurationViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextView *singleTextView;
+@property (weak, nonatomic) IBOutlet UITextView *originalTextView;
 
-@property (weak, nonatomic) IBOutlet UIView *firstContainerView;
-@property (weak, nonatomic) IBOutlet UIView *secondContainerView;
+@property (weak, nonatomic) IBOutlet UIView *otherContainerView;
+@property (weak, nonatomic) IBOutlet UIView *thirdContainerView;
 
 - (IBAction)endEditing:(UIBarButtonItem *)sender;
 

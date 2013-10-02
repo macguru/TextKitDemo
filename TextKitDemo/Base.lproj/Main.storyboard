@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A584" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
@@ -59,9 +59,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="firstContainerView" destination="ZV7-VL-Kd8" id="j7g-8S-IGf"/>
-                        <outlet property="secondContainerView" destination="auf-0B-h3H" id="tBy-kC-6fx"/>
-                        <outlet property="singleTextView" destination="JYe-Ji-kZb" id="H38-cm-duT"/>
+                        <outlet property="originalTextView" destination="JYe-Ji-kZb" id="azn-Os-b6F"/>
+                        <outlet property="otherContainerView" destination="ZV7-VL-Kd8" id="rhr-Lz-U9r"/>
+                        <outlet property="thirdContainerView" destination="auf-0B-h3H" id="dEJ-jx-kgm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ceL-7Y-pUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
