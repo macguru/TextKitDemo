@@ -31,8 +31,6 @@
 	[upperTextStorage addLayoutManager: lowerLayoutManager];
 	
 	NSTextContainer *firstTextContainer = [NSTextContainer new];
-	firstTextContainer.widthTracksTextView = YES;
-	firstTextContainer.heightTracksTextView = YES;
 	[lowerLayoutManager addTextContainer: firstTextContainer];
 	
 	UITextView *firstTextView = [[UITextView alloc] initWithFrame:self.firstContainerView.bounds textContainer:firstTextContainer];
