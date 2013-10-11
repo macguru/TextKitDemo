@@ -11,7 +11,7 @@
 
 @implementation TKDHighlightingTextStorage
 {
-	NSTextStorage *_imp;
+	NSMutableAttributedString *_imp;
 }
 
 - (id)init
@@ -19,7 +19,7 @@
 	self = [super init];
 	
 	if (self) {
-		_imp = [NSTextStorage new];
+		_imp = [NSMutableAttributedString new];
 	}
 	
 	return self;
