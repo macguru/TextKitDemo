@@ -58,9 +58,6 @@
 
 - (void)processEditing
 {
-	[super processEditing];
-
-	
 	// Regular expression matching all iWords -- first character i, followed by an uppercase alphabetic character, followed by at least one other character. Matches words like iPod, iPhone, etc.
 	static NSRegularExpression *iExpression;
 	iExpression = iExpression ?: [NSRegularExpression regularExpressionWithPattern:@"i[\\p{Alphabetic}&&\\p{Uppercase}][\\p{Alphabetic}]+" options:0 error:NULL];
@@ -75,6 +72,9 @@
 		// Add red highlight color
 		[self addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:result.range];
 	}];
+  
+  // Call super *after* changing the attrbutes, as it finalizes the attributes and calls the delegate methods.
+  [super processEditing];
 }
 
 @end
