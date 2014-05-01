@@ -52,7 +52,7 @@
 	CGPoint circleCenter = self.circleView.center;
 	
 	circleCenter.x = location.x - _panOffset.x + self.circleView.frame.size.width / 2;
-	circleCenter.y = location.y - _panOffset.y + self.circleView.frame.size.width / 2;
+	circleCenter.y = location.y - _panOffset.y + self.circleView.frame.size.height / 2;
 	self.circleView.center = circleCenter;
 	
 	// Update exclusion path
